@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\BrunchesImages\\0c5188d4-87b2-4f5a-a240-f9d2f51ce94e_transporter 3 poster.png",
+      "PackagePath": "staticwebassets\\BrunchesImages\\0c5188d4-87b2-4f5a-a240-f9d2f51ce94e_transporter 3 poster.png"
+    },
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\BrunchesImages\\7a8b86c5-3f36-4acd-b215-a8a90497fb77_The godfather.png",
+      "PackagePath": "staticwebassets\\BrunchesImages\\7a8b86c5-3f36-4acd-b215-a8a90497fb77_The godfather.png"
+    },
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\BrunchesImages\\c3342a0e-f96e-43b6-a3c3-003a3abaee60_John Wick 2.png",
+      "PackagePath": "staticwebassets\\BrunchesImages\\c3342a0e-f96e-43b6-a3c3-003a3abaee60_John Wick 2.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.DeliveryProjectApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.DeliveryProjectApi.props",
+      "PackagePath": "build\\DeliveryProjectApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.DeliveryProjectApi.props",
+      "PackagePath": "buildMultiTargeting\\DeliveryProjectApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.DeliveryProjectApi.props",
+      "PackagePath": "buildTransitive\\DeliveryProjectApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
