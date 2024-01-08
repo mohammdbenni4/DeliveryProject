@@ -18,7 +18,11 @@ namespace Application.Cities.Commands.AddCity
            // _context = context;
         }
 
-       
+        public AddCityHandler()
+        {
+           
+        }
+
 
         public async Task<OperationResponse<AddCityCommand.Response>> HandleAsync(AddCityCommand.Request request,
             CancellationToken cancellationToken = new())

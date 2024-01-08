@@ -12,9 +12,9 @@ namespace Domain.Models
         public Brunch? Brunch { get; set; }
         public Guid BrunchId { get; set; }
 
-        public Product? Product { get; set; }
-        public Guid ProductId { get; set; }
+        public List<Product>? Product { get; set; } = new();
+        public List<Guid>? ProductIds { get; set; } = new();
 
-        public List<string>? ImageUrl { get; set; }
+        public string? ImageUrl { get; set; } 
     }
 }

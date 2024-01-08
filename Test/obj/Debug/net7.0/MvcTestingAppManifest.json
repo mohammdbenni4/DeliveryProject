@@ -1,0 +1,7 @@
+{
+  "Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\Application",
+  "DeliveryProjectApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi",
+  "Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\Domain",
+  "Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\Infrastructure",
+  "Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\Persistence"
+}

@@ -9,7 +9,7 @@ namespace Domain.Models.Security
             Id = Guid.NewGuid();
             UserName = Guid.NewGuid().ToString();
         }
-        public DateOnly? BirthDate { get; protected set; }
+        public DateOnly? BirthDate { get; set; }
         
     }
 }

@@ -9,6 +9,7 @@ namespace Persistence.Configurations
         public void Configure(EntityTypeBuilder<ProductAddOne> builder)
         {
             builder.Property(x => x.Name).HasColumnType("jsonb");
+         //   builder.OwnsOne(x => x.Product);
         }
     }
 }

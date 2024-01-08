@@ -35,6 +35,12 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\BrunchesImages\" />
+    <Folder Include="wwwroot\Drivers\Documents\" />
+    <Folder Include="wwwroot\Drivers\Photos\" />
+    <Folder Include="wwwroot\Employees\Documents\" />
+    <Folder Include="wwwroot\Employees\Photos\" />
+    <Folder Include="wwwroot\ProductCategoryIcons\" />
+    <Folder Include="wwwroot\ProductImages\" />
   </ItemGroup>
 
 </Project>

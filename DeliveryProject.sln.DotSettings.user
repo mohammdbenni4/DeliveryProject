@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/CodeInspection/Roslyn/RoslynEnabled/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=261f6aca_002D0a7f_002D49f7_002D8216_002Dd6ba3d7e7fef/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Add" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::EEDCBF68-F48C-4859-BCE9-407D10254BFD::net7.0::Test.AddProductTest.Add&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::EEDCBF68-F48C-4859-BCE9-407D10254BFD::net7.0::Test.AddProductTest.AddCity&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::EEDCBF68-F48C-4859-BCE9-407D10254BFD::net7.0::Test.DriverTests.Add&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

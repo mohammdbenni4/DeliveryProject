@@ -5,6 +5,7 @@ namespace Domain.Models
 {
     public class Address : Entity
     {
+       
         public Guid Id { get; set; }
 
         public LanguageProperty? Name { get; set; }

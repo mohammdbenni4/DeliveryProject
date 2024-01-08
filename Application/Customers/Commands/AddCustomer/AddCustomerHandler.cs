@@ -18,13 +18,15 @@ public class AddCustomerHandler : IRequestHandler<AddCustomerCommand.Request,Ope
     private readonly IUserRepository _userRepository;
     private readonly IHttpResolverService _httpResolverService;
     private readonly ElUserManager<User> _elUserManager;
+    private readonly IRepository _repository;
 
     public AddCustomerHandler( IHttpResolverService httpResolverService
-        , IUserRepository userRepository, ElUserManager<User> elUserManager)
+        , IUserRepository userRepository, ElUserManager<User> elUserManager, IRepository repository)
     {
         _httpResolverService = httpResolverService;
         _userRepository = userRepository;
         _elUserManager = elUserManager;
+        _repository = repository;
     }
 
     public async Task<OperationResponse> HandleAsync(AddCustomerCommand.Request request, CancellationToken cancellationToken = new CancellationToken())
@@ -37,21 +39,42 @@ public class AddCustomerHandler : IRequestHandler<AddCustomerCommand.Request,Ope
         //create the customer
         var customer = new Customer();
         customer.Id = Guid.NewGuid();
-        customer.Name = LanguageProperty.Create(lang,request.Name);
-        customer.CityId = request.CityId;
+        customer.Name = LanguageProperty.Create(lang,request.CustomerName);
+        customer.CityId = request.CityIdCustomer;
         customer.City =
             await _userRepository.TrackingQuery<City>()
-                .Where(a => a.Id == request.CityId)
+                .Where(a => a.Id == request.CityIdCustomer)
                 .FirstAsync(cancellationToken);
 
         customer.Email = request.Email;
         customer.MobileNumber = request.MobileNumber;
+        customer.BirthDate = request.BornDate;
         customer.BornDate = request.BornDate;
-        var identityResult = await _userRepository.AddWithRole(customer, request.Password,request.RoleName);
-        
+        var identityResult = await _userRepository.AddWithRole(customer, request.Password,"Customer");
+
        
         //create the address for this customer
+        var address = new Address();
+        address.Id = Guid.NewGuid();
+        address.Name = LanguageProperty.Create(lang,request.AddressName);
+        address.CityId = request.AddressCityId;
+        address.Street = LanguageProperty.Create(lang,request.Street);
+        address.Building = LanguageProperty.Create(lang, request.Building);
+        address.Floor = LanguageProperty.Create(lang, request.Floor);
+        address.MoreDetails = LanguageProperty.Create(lang,request.MoreDetails);
+        address.NeighborhoodId = request.NeighborhoodId;
+        address.Customer = customer;
+        address.CustomerId = customer.Id;
+
+        await _repository.AddAsync(address);
+        await _repository.UnitOfWork.SaveChangesAsync(cancellationToken);
         
+        
+        customer.Address.Add(address);
+        customer.AddressIds.Add(address.Id);
+        _repository.Update(customer);
+        
+        await _repository.UnitOfWork.SaveChangesAsync(cancellationToken);
         
         return OperationResponse.Success();
     }

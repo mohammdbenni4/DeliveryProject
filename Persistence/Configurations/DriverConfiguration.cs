@@ -1,12 +1,6 @@
 ﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Persistence.Configurations
 {
     public class DriverConfiguration : IEntityTypeConfiguration<Driver>
@@ -15,6 +9,11 @@ namespace Persistence.Configurations
         {
             builder.Property(x => x.Name).HasColumnType("jsonb");
             builder.Property(x => x.Address).HasColumnType("jsonb");
+            builder.Property(x => x.MobileNumbers).HasColumnType("jsonb");
+            builder.Property(x => x.WorkingDays).HasColumnType("jsonb");
+            
+            //builder.Property(c => c.Times).HasColumnType("jsonb");
+            builder.Property(c => c.Documents).HasColumnType("jsonb");
         }
     }
 }

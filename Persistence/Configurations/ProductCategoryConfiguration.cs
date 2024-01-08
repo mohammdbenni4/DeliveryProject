@@ -9,7 +9,8 @@ namespace Persistence.Configurations
         public void Configure(EntityTypeBuilder<ProductCategory> builder)
         {
             builder.Property(x => x.Name).HasColumnType("jsonb");
-            builder.Property(x => x.ImageUrl).HasColumnType("jsonb");
+            
+            builder.Property(x => x.ProductIds).HasColumnType("jsonb");
         }
     }
 }

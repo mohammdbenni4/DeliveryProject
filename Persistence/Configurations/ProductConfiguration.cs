@@ -16,6 +16,8 @@ namespace Persistence.Configurations
             builder.Property(x => x.Name).HasColumnType("jsonb");
             builder.Property(x => x.Description).HasColumnType("jsonb");
             builder.Property(x => x.ProductImages).HasColumnType("jsonb");
+            builder.Property(x => x.AddOnes).HasColumnType("jsonb");
+         //   builder.OwnsMany(x => x.AddOnes);
         }
     }
 }

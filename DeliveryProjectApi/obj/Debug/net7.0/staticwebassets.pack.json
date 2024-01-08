@@ -13,6 +13,38 @@
       "PackagePath": "staticwebassets\\BrunchesImages\\c3342a0e-f96e-43b6-a3c3-003a3abaee60_John Wick 2.png"
     },
     {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\Drivers\\Photos\\136adbdf-7c9d-4c0a-81e8-bffd6fb826c4_The godfather.png",
+      "PackagePath": "staticwebassets\\Drivers\\Photos\\136adbdf-7c9d-4c0a-81e8-bffd6fb826c4_The godfather.png"
+    },
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\Drivers\\Photos\\8e4267b1-2025-407b-bc3a-61a1f02721d0_The godfather.png",
+      "PackagePath": "staticwebassets\\Drivers\\Photos\\8e4267b1-2025-407b-bc3a-61a1f02721d0_The godfather.png"
+    },
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\Employees\\Documents\\6d93f0e9-31ee-483b-be04-16488f9ecca9_The godfather.png",
+      "PackagePath": "staticwebassets\\Employees\\Documents\\6d93f0e9-31ee-483b-be04-16488f9ecca9_The godfather.png"
+    },
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\Employees\\Photos\\4e2589e4-2e2e-49ae-94fa-9f0339ff0919_transporter 3 poster.png",
+      "PackagePath": "staticwebassets\\Employees\\Photos\\4e2589e4-2e2e-49ae-94fa-9f0339ff0919_transporter 3 poster.png"
+    },
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\ProductCategoryIcons\\32bce415-b54e-41b1-aa21-b1c77eba29db_fast6.png",
+      "PackagePath": "staticwebassets\\ProductCategoryIcons\\32bce415-b54e-41b1-aa21-b1c77eba29db_fast6.png"
+    },
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\ProductImages\\4bd3b0ea-bd3a-4c49-b79f-10a6181ff32d_elkood.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\4bd3b0ea-bd3a-4c49-b79f-10a6181ff32d_elkood.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\ProductImages\\89b3e3d9-f0d0-4eca-82d1-534a8998efb0_elkood.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\89b3e3d9-f0d0-4eca-82d1-534a8998efb0_elkood.jpg"
+    },
+    {
+      "Id": "C:\\Users\\AL-FARABI\\Desktop\\projects C#\\Elkood Training\\DeliveryProject\\DeliveryProject\\DeliveryProjectApi\\wwwroot\\ProductImages\\dca67848-4237-40a8-83ee-a2f450f25006_elkood.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\dca67848-4237-40a8-83ee-a2f450f25006_elkood.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.DeliveryProjectApi.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

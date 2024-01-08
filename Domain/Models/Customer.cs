@@ -19,9 +19,12 @@ namespace Domain.Models
         
         public DateOnly? BornDate { get; set; }
 
-        public List<Address> Address { get; set; }
-        public List<Guid> AddressIds { get; set; }
+        public List<Address>? Address { get; set; } = new();
+        public List<Guid>? AddressIds { get; set; } = new();
+
 
     }
+    
+   
     
 }

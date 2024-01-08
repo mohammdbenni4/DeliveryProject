@@ -40,7 +40,7 @@ namespace Application.Shops.Commands.AddShop
                 photo.CopyTo(fileStream);
             }
 
-            return fileName;
+            return Path.Combine("BrunchesImages",fileName);
         }
 
         

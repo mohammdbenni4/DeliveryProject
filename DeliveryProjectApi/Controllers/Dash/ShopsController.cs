@@ -1,7 +1,14 @@
-﻿using Application.Cities.Commands.AddCity;
+﻿using Application.Brunches.Commands.AddBrunch;
+using Application.Cities.Commands.AddCity;
 using Application.Cities.Queries.GetAllCities;
+using Application.ProductAddOnes.Commands.AddAddOne;
+using Application.ProductCategories.Commands.AddProductCategoryToBrunch;
+using Application.ProductCategories.Queries.GetProductCatForBrunch;
+using Application.Products.Commands.AddProduct;
 using Application.ShopCategories.Queries.GetAllCat;
 using Application.Shops.Commands.AddShop;
+using Application.Shops.Queries.GetAllShops;
+using Application.Shops.Queries.GetShopById;
 using DeliveryProjectApi.Util;
 using Domain;
 using Domain.Models;
@@ -17,7 +24,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace DeliveryProjectApi.Controllers.Dash
 {
     
-    [ApiController]
     public class ShopsController : ElApiController
     {
         [HasPermissions(Permissions.ShopCategories.Get,true)]
@@ -29,23 +35,32 @@ namespace DeliveryProjectApi.Controllers.Dash
            [FromQuery] GetAllCatQuery.Request request)
          => await handler.HandleAsync(request).ToJsonResultAsync();
         
-        [AllowAnonymous]
-        [HasPermissions(Permissions.Cities.Get,true)]
-        [HttpGet, ElRoute(ElApiGroupNames.Dashboard), ElApiGroup(ElApiGroupNames.Dashboard)]
-        [ProducesResponseType(typeof(List<City>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> GetAllCities(
-           [FromServices] IRequestHandler<GetAllCitiesQuery.Request, OperationResponse<GetAllCitiesQuery.Response>> handler,
-           [FromQuery] GetAllCitiesQuery.Request request)
-         => await handler.HandleAsync(request).ToJsonResultAsync();
+       
         
         
-        [HasPermissions(Permissions.Shops.Add,true)]
+        // [HasPermissions(Permissions.Shops.Add,true)]
         [HttpPost, ElRoute(ElApiGroupNames.Dashboard), ElApiGroup(ElApiGroupNames.Dashboard)]
         [ProducesResponseType(typeof(AddShopCommand.Response), StatusCodes.Status200OK)]
-        public async Task<IActionResult> AddNewShop(
+        public async Task<IActionResult> Add(
             [FromServices] IRequestHandler<AddShopCommand.Request, OperationResponse<AddShopCommand.Response>> handler,
             [FromForm] AddShopCommand.Request request)
             => await handler.HandleAsync(request).ToJsonResultAsync();
+        
+        [HttpGet, ElRoute(ElApiGroupNames.Dashboard), ElApiGroup(ElApiGroupNames.Dashboard)]
+        [ProducesResponseType(typeof(GetShopByIdQuery.Response), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetById(
+            [FromServices] IRequestHandler<GetShopByIdQuery.Request, OperationResponse<GetShopByIdQuery.Response>> handler,
+            [FromQuery] GetShopByIdQuery.Request request)
+            => await handler.HandleAsync(request).ToJsonResultAsync();
+        
+         
+        [HttpGet, ElRoute(ElApiGroupNames.Dashboard), ElApiGroup(ElApiGroupNames.Dashboard)]
+        [ProducesResponseType(typeof(OperationResponse<List<Brunch>>), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetAll(
+            [FromServices] IRequestHandler<GetAllShopsQuery.Request, OperationResponse<List<Brunch>>> handler,
+            [FromQuery] GetAllShopsQuery.Request request)
+            => await handler.HandleAsync(request).ToJsonResultAsync();
+        
         
     }
 }
